@@ -2,7 +2,7 @@
 
 namespace LabProject.RungeKutt
 {
-    internal class MethodRungeKutt
+    internal class RungeKuttMethod
     {
         private double x0, y0;
         private double[] solution = new double[4];
@@ -49,7 +49,7 @@ namespace LabProject.RungeKutt
             get { return solution; }
         }
 
-        protected internal MethodRungeKutt(double x0, double y0)
+        protected internal RungeKuttMethod(double x0, double y0)
         {
             this.x0 = x0;
             this.y0 = y0;
@@ -81,10 +81,10 @@ namespace LabProject.RungeKutt
                 y += deltaY;
             }
 
-            for (int i = 0; i < solution.Length; i++)
-            {
-                Console.WriteLine("y[" + i + "] = " + solution[i]);
-            }
+            //for (int i = 0; i < solution.Length; i++)
+            //{
+            //    Console.WriteLine("y[" + i + "] = " + solution[i]);
+            //}
         }
     }
 }
