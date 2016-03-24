@@ -8,6 +8,42 @@ namespace LabProject.RungeKutt
         private double[] solution = new double[4];
         private static double H = 0.1;
 
+        public double xO
+        {
+            get
+            {
+                return x0;
+            }
+            set
+            {
+                this.x0 = value;
+            }
+        }
+
+        public double yO
+        {
+            get
+            {
+                return y0;
+            }
+            set
+            {
+                this.y0 = value;
+            }
+        }
+
+        public double h
+        {
+            get
+            {
+                return H;
+            }
+            set
+            {
+                H = value;
+            }
+        }
+
         public double[] Solution
         {
             get { return solution; }
